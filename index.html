@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <title>Nagarajan - Author</title>
+    <meta name="description" content="Two books—one story—told across Tamil and English." />
+    
+    <!-- OpenGraph/Twitter Meta Tags -->
+    <meta property="og:title" content="Nagarajan - Author" />
+    <meta property="og:description" content="Understanding is enough." />
+    <meta property="og:image" content="assets/promo.jpg" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <!-- 1) HERO -->
+    <header class="hero" id="hero">
+        <div class="hero-bg">
+            <!-- Static image, assumes presence in client/public/assets/ -->
+            <img src="assets/promo.jpg" alt="" class="hero-img" />
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <h1 class="author-name">Author Nagarajan</h1>
+            <p class="tagline">Rift to Reunion and Purithal Pothum</p>
+            <!-- EDIT HERO INTRO HERE -->
+            <p class="intro-line">2025 Golden Book Award Winner</p>
+            <div class="hero-ctas">
+               
+                <a href="https://www.amazon.in/Rift-Reunion-Understanding-Enough-Nagarajan/dp/9372544388/" target="_blank" rel="noopener" class="btn secondary-btn">Buy Rift to Reunion</a>
+                 <a href="https://www.amazon.in/Purithal-Podhum-Mr-Nagarajan/dp/B0DBXZ8B5S" target="_blank" rel="noopener" class="btn primary-btn">Buy Purithal Pothum</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- STICKY MOBILE BUTTON -->
+    <a href="#books" class="sticky-buy-btn" id="stickyBtn">Buy Books</a>
+
+    <!-- 3) BOOKS -->
+    <section class="books-section" id="books">
+        <div class="container">
+            <div class="books-grid">
+
+                <!-- BOOK 1 (English translation) - Rift to Reunion -->
+                <article class="book-card">
+                    <div class="book-image-wrapper">
+                        <a href="https://www.amazon.in/Rift-Reunion-Understanding-Enough-Nagarajan/dp/9372544388/" target="_blank" rel="noopener">
+                          <img src="assets/front_cover.jpg" alt="Rift to Reunion Cover" class="main-cover" />
+                        </a>
+                        <div class="mini-gallery">
+                            <img src="assets/back_cover.png" alt="Back Cover 1" class="thumb" onclick="openModal(this.src)" onkeydown="if(event.key === 'Enter') openModal(this.src)" tabindex="0" />
+                            <img src="assets/back_cover_2.jpg" alt="Back Cover 2" class="thumb" onclick="openModal(this.src)" onkeydown="if(event.key === 'Enter') openModal(this.src)" tabindex="0" />
+                            <img src="assets/back_plus_front.jpg" alt="Full Cover" class="thumb" onclick="openModal(this.src)" onkeydown="if(event.key === 'Enter') openModal(this.src)" tabindex="0" />
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h2 class="book-title">Rift to Reunion</h2>
+                        <div class="book-blurb">
+                            <p>Mr. Nagarajan, The author's profound love for the language has found expression across multiple literary forms, including poetry, essays, and drama, while balancing a high-ranking position in the Information Technology sector. This in itself makes him a figure worth understanding, and The story written by him is certainly one that today’s generation should read.</p>
+                            <p>Through this story, the author impresses upon today’s generation that the absence of understanding inevitably leads to separation.</p>
+                        </div>
+                        <a href="https://www.amazon.in/Rift-Reunion-Understanding-Enough-Nagarajan/dp/9372544388/" target="_blank" rel="noopener" class="btn buy-btn">Buy on Amazon</a>
+                    </div>
+                </article>
+
+                <!-- BOOK 2 (Tamil original) - Purithal Pothum -->
+                <article class="book-card">
+                    <div class="book-image-wrapper">
+                        <a href="https://www.amazon.in/Purithal-Podhum-Mr-Nagarajan/dp/B0DBXZ8B5S" target="_blank" rel="noopener">
+                          <img src="assets/purithal_pothum_better.jpg" alt="Purithal Pothum Cover" class="main-cover" />
+                        </a>
+                        <div class="mini-gallery">
+                            <img src="assets/purithal_pothum_in_all_media.jpg" alt="Available across formats" class="thumb" onclick="openModal(this.src)" onkeydown="if(event.key === 'Enter') openModal(this.src)" tabindex="0" />
+                            <img src="assets/purithal_pothum_extra.jpg" alt="Purithal Pothum Extra" class="thumb" onclick="openModal(this.src)" onkeydown="if(event.key === 'Enter') openModal(this.src)" tabindex="0" />
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h2 class="book-title">
+                          Purithal Pothum
+                          <span class="book-subtitle"><em>Understanding Is Enough.</em></span>
+                        </h2>
+                            <p class="book-blurb">
+                              The original Tamil edition—an acclaimed story about how the absence of understanding can lead to separation.
+                            </p>
+                        </p>
+                        <a href="https://www.amazon.in/Purithal-Podhum-Mr-Nagarajan/dp/B0DBXZ8B5S" target="_blank" rel="noopener" class="btn buy-btn">Buy on Amazon</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4) READER REVIEW -->
+    <section class="review-section">
+        <div class="container">
+            <h2 class="section-title">Reader Review</h2>
+            <div class="review-content">
+                <!-- EDIT OPTIONAL REVIEWS HERE -->
+                <blockquote class="review-quote">
+                    “Rift to Reunion - The author has displayed an aura of sprezzatura in his maiden voyage, an emotional aroma stronger like the Madras Filter Coffee… a feel good read”
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5) ABOUT THE AUTHOR -->
+    <section class="about-section">
+        <div class="container">
+            <h2 class="section-title">About the Author</h2>
+            <!-- EDIT BIO HERE -->
+            <div class="bio-content">
+                <p>Nagarajan is an accomplished writer whose profound love for language spans multiple literary forms, including poetry, essays, and drama.</p>
+                <p>He balances his passion for literature with a high-ranking position in the Information Technology sector, bringing a unique perspective to his storytelling that resonates with today’s generation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- AWARD SECTION -->
+    <section class="award-section-bottom">
+        <div class="container">
+            <h2 class="section-title"></h2>
+            <div class="award-display">
+                <img src="assets/GBA_better.png" alt="Golden Book Award 2025" class="award-img-large" />
+                <p class="award-caption">Golden Book Award 2025 — Purithal Pothum</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6) FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Nagarajan</p>
+            <p class="contact-placeholder"><a href="mailto:author@example.com">Contact Author</a></p>
+        </div>
+    </footer>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="imageModal" class="modal" role="dialog" aria-modal="true">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <img class="modal-content" id="modalImg" alt="Expanded cover image" />
+    </div>
+
+    <!-- MAIN SCRIPT -->
+    <script src="/script.js"></script>
+</body>
+</html>
